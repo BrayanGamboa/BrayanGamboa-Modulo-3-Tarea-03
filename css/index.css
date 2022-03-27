@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&family=Patrick+Hand&display=swap');
+
+* {
+    font-family: 'Patrick Hand', cursive;
+    font-size: 20px;
+    text-align: center;
+}
+body {
+  background-image: url("../img/logo.png");
+  background-size: cover;
+  background-repeat: repeat;
+}
+
+form{
+    margin-left: auto;
+    margin-right: auto;
+    width: 29%;
+    height: 27em;
+    border: 3px solid black;
+    margin-top: 8%;
+}
+#datos{
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+#logo_img{
+    height: 13em;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -35%;
+    margin-bottom: 3%;
+}
+
+#img_personaje{
+    display: flex;
+    height: 40%;
+    width: auto;
+    border-radius: 30px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+#nombre{
+    font-size: 40px;
+}
+#escuela{
+    font-size: 30px;
+}
+
+
+/* 
+.cards{
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #F1D793;
+    width: 29%;
+    height: 27em; 
+}*/
+
+
+/* body{
+    margin: 3%;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: aqua;
+}
+form{
+    width: 30%;
+    height: 50%;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    border: 3px solid black;
+}
+header{
+    text-align: center;
+}
+table{
+    justify-content: flex-start;
+} */
