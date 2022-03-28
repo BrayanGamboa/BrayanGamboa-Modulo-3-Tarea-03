@@ -1,21 +1,24 @@
 import { students } from "./data.js";
 
-swal(
-    "Presiona el logo",
-    "para iniciar",
-    "success"
-);
+swal("Presiona el logo", "para iniciar", "success");
 
+let index = -1;
 
-let index = Math.floor(Math.random()*11);
-
-console.log(index);
-let personaje = students[index];
+// console.log(index);
+let personaje;
 
 let form = document.getElementById("form");
-form.addEventListener("click", () => {
+form.addEventListener("click", cambio);
+
+function cambio() {
+  if (index >= 10) {
+    index = 0
+  } else {
+    index++
+  }
+  personaje = students[index];
   card();
-});
+}
 
 function card() {
   form.innerHTML = `
@@ -27,7 +30,7 @@ function card() {
             <p id="escuela">"${personaje["house"]}"</p>
         </div>
     </div>
-    <img src="./img/flecha-izq.png" alt="Flecha Izquierda" id="flecha_izq" class="flecha">
-    <img src="./img/flecha-dercha.png" alt="Flecha Derecha" id="flecha_derecha" class="flecha">
+    <img src="./img/flecha-izq.png" alt="Flecha Izquierda" id="flecha_izq" class="flecha" onclick="cambio()">
+    <img src="./img/flecha-dercha.png" alt="Flecha Derecha" id="flecha_derecha" class="flecha" onclick="cambio()">
         `;
 }
